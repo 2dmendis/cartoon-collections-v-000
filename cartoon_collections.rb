@@ -1,13 +1,22 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
+def roll_call_dwarves(names)
+  i = 1 
+  names.each do |name|
+    puts "#{i}. *#{name}"
+    i += 1
+  end 
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
+def summon_captain_planet(elements)
+  elements.map! do |i|
+    i.capitalize + "!"
+  end 
+  elements 
 end
 
-def long_planeteer_calls# code an argument here
-  # Your code here
+def long_planeteer_calls(call)
+  call.include? do |i|
+    "test"
+  end 
 end
 
 def find_the_cheese# code an argument here
